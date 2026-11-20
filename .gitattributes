@@ -1,0 +1,2 @@
+# Preserve the bundled upstream compatibility client.
+vendor/** -whitespace

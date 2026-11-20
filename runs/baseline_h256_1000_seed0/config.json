@@ -1,0 +1,42 @@
+{
+  "seed": 0,
+  "worker_id": 65,
+  "state_size": 33,
+  "action_size": 4,
+  "hidden_size": 256,
+  "num_agents": 20,
+  "iterations": 1000,
+  "rollout_steps": 1000,
+  "transitions": 20000000,
+  "hyperparameters": {
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "clip_epsilon": 0.2,
+    "update_epochs": 10,
+    "minibatch_size": 512,
+    "value_loss_coef": 0.5,
+    "gae_lambda": 0.95
+  },
+  "features": {
+    "use_gae": false,
+    "normalize_advantages": false,
+    "normalize_observations": false,
+    "max_grad_norm": 0.0,
+    "target_kl": 0.0
+  },
+  "software": {
+    "python": "3.10.12",
+    "torch": "2.14.0+cu130",
+    "numpy": "1.26.4",
+    "device": "cpu"
+  },
+  "name": "baseline_h256_1000_seed0",
+  "status": "complete",
+  "episodes": 999,
+  "final_rolling100": 0.8278549814959989,
+  "best_rolling100": 9.052064797670582,
+  "recent10": 0.9356499790865929,
+  "solved_episode": null,
+  "imported": false,
+  "checkpoint": "checkpoints/baseline_h256_1000_seed0.pt"
+}

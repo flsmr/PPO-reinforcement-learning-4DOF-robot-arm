@@ -1,0 +1,42 @@
+{
+  "seed": 2,
+  "worker_id": 37,
+  "state_size": 33,
+  "action_size": 4,
+  "hidden_size": 128,
+  "num_agents": 20,
+  "iterations": 1000,
+  "rollout_steps": 1000,
+  "transitions": 20000000,
+  "hyperparameters": {
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "clip_epsilon": 0.2,
+    "update_epochs": 10,
+    "minibatch_size": 512,
+    "value_loss_coef": 0.5,
+    "gae_lambda": 0.95
+  },
+  "features": {
+    "use_gae": true,
+    "normalize_advantages": false,
+    "normalize_observations": false,
+    "max_grad_norm": 0.0,
+    "target_kl": 0.0
+  },
+  "software": {
+    "python": "3.10.12",
+    "torch": "2.14.0+cu130",
+    "numpy": "1.26.4",
+    "device": "cpu"
+  },
+  "name": "gae_1000_seed2",
+  "status": "complete",
+  "episodes": 999,
+  "final_rolling100": 6.812314847732895,
+  "best_rolling100": 31.54488929491676,
+  "recent10": 7.495799832455814,
+  "solved_episode": 155,
+  "imported": false,
+  "checkpoint": "checkpoints/gae_1000_seed2.pt"
+}

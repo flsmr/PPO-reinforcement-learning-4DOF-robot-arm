@@ -1,0 +1,10 @@
+# Python 3.10 is the recommended compatibility baseline.
+torch>=2.2,<3
+numpy==1.26.4
+matplotlib>=3.6,<4
+Pillow>=9,<13
+
+# The precompiled Reacher requires the legacy API-4 client in vendor/.
+# Modern mlagents_envs is not a drop-in replacement for that client.
+protobuf==3.20.3
+grpcio==1.68.1
